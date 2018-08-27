@@ -71,7 +71,7 @@ redis:set(boss..':WITTING:ON',msg.to.id)
 redis:setex(boss..":RUN_BOT",5,true)
 os.execute('rm -fr ../.telegram-cli') sleep(0.2) os.exit()
 end
-local website = 'https://th3boss.com/join/?id='
+local website = ''
 function send_msg(chat_id,text,reply_id,markdown)
 local url = 'https://api.telegram.org/bot'.._info.TOKEN..'/sendMessage?chat_id='..chat_id..'&text='..URL.escape(text)..'&disable_web_page_preview=true&'
 if reply_id then url = url..'&reply_to_message_id='..reply_id end
