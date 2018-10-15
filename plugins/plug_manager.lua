@@ -5,7 +5,7 @@
 local function run(msg, matches) 
 local update = redis:get(boss..":VERSION")
 if (matches[1] == '/p' or matches[1]=="الملفات 🗂") and is_sudo(msg) then -- اضهار لسته الملفات الموجوده بالسيرفر
-if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
+if not we_sudo(msg) then return "هذا الاوامر للمطور الاساسي فقط 🛠" end
 return list_all_plugins() 
 end 
 if matches[1] == '+' and is_sudo(msg) then 
