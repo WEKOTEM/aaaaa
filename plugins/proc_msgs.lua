@@ -1,6 +1,6 @@
 --[[
 << تم برمجه وكتابه السورس من قبل مطورين >>
-<<         @BLCON  \  @TH3BOSS          >>
+<<         @RRR_RP  \  @TH3LEDR        >>
 ]]
 local function pre_process(msg)
 --====================== Reply Only Group =====================================
