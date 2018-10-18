@@ -1,6 +1,6 @@
 --[[
 << تم برمجه وكتابه السورس من قبل مطورين >>
-<<         @BLCON  \  @TH3BOSS          >>
+<<         @RRR_RP  \  @TH3LEDR         >>
 ]] 
 local function run(msg, matches) 
 local update = redis:get(boss..":VERSION")
@@ -44,7 +44,7 @@ reload_plugins()
 end end 
 if matches[1]:lower() == "ssp" and matches[2] and matches[3] then
 if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
-sendDocument(msg.to.id, msg.id_,0, 1, nil, "./"..matches[2].."/"..matches[3], '🗂¦ آلمـلف مـقدم مـن قنآ‏‏هہ آلزعـًيـٌِم ¦ֆ \n📡¦ تابع قناة السورس @llDEV1ll\n👨🏽‍🔧', dl_cb, nil) end
+sendDocument(msg.to.id, msg.id_,0, 1, nil, "./"..matches[2].."/"..matches[3], '🗂¦ آلمـلف مـقدم مـن قنآ‏‏هہ الجوكر ¦ֆ \n📡¦ تابع قناة السورس @lJOKERI\n👨🏽‍🔧', dl_cb, nil) end
 if (matches[1] == 'حفظ الملف' or matches[1] == 'save') and matches[2] and is_sudo(msg) then
 if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
 if msg.reply_id then
@@ -66,7 +66,7 @@ sendMsg(msg.to.id,msg.id_,'⏳*┇* جاري اعاده تشغيل البوت ..
 RELOAD_BOT(msg)
 end
 if matches[1] == 'اصدار السورس' or matches[1] == 'الاصدار' then
-return '👨🏾‍🔧¦ اصدار سورس الزعيم : `v'..update..'` \n📡'
+return '👨🏾‍🔧¦ اصدار سورس الجوكر : `v'..update..'` \n📡'
 end
 if (matches[1] == 'تحديث السورس' or matches[1] == 'تحديث السورس ™') and is_sudo(msg) then
 if not we_sudo(msg)  then return "📛*￤* هذا الاوامر للمطور الاساسي فقط 🛠" end
