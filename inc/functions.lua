@@ -581,6 +581,14 @@ if not is_sudo(msg) and not redis:get(boss..'lock_service') then return '👮*¦
 if msg.to.type ~= "channel" then return '👮*¦* المجموعه بالتأكيد تم تفعيلها \n 📛' end
 
  
+if not we_sudo(msg) then
+local channel = '@QD_QQ'
+local url , res = https.request('https://api.telegram.org/bot'.._info.TOKEN..'/getchatmember?chat_id='..channel..'&user_id='..msg.from.id)
+data = JSON.decode(url)
+if res ~= 200 or data.result.status == "left" or data.result.status == "kicked" then
+return "🚸| آشـترگ بآلقنآ‌‏هہ آولآ "..channel.." \n🔛| ثم آرجع آرسـل تفعيل ."
+end
+end
  
  if redis:get(boss..'group:add'..msg.to.id) then  return '' end
 local getinfoi = getinfor(msg.from.id)
