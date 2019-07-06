@@ -45,7 +45,7 @@ io.write('\n\27[1;33m￤ادخل معرفك ↓  \n￤Enter your USERNAME SUDO :
 SUDO_USER = io.read()
 if SUDO_USER ~= '' then
 if string.match(SUDO_USER, '@[%a%d_]') then
-local url , res = https.request('https://th3boss.ga/GetID/?User='..SUDO_USER)
+local url , res = https.request('https://api.th3bs.com/GetUser/?User='..SUDO_USER)
 if res ~= 200 then
 print('\n\27[1;31m￤ Conect is Failed !\n￤ حدث خطأ في الاتصال !')
 create_config()
