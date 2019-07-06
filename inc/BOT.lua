@@ -135,9 +135,7 @@ create_config()
 end end
 
 local REBD = redis:get(ip_login..":TOKEN"):match("(%d+)")
-
-local getversion = https.request('https://api.th3boss.com/version/')
-
+	
 redis:set(REBD..":VERSION",getversion)
 
 redis:sadd(REBD..':PLUGINS_FILE:','cmd_help')
