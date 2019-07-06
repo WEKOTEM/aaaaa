@@ -52,7 +52,7 @@ create_config()
 else
 local jjson = JSON.decode(url)
 if jjson.result then
-print('\n\27[1;36m￤تم حفظ معرف المطور واستخراج الايدي منه \n￤Success Save USERNAME IS_ID: \27[0;32m['..jjson.information.id..']\n\27[0;39;49m')
+print('\n\27[1;36m￤تم حفظ معرف المطور واستخراج الايدي منه \n￤Success Save USERNAME IS_ID: \27[0;32m['..GetUser.information.id..']\n\27[0;39;49m')
 redis:set(ip_login..":SUDO_USER",true)
 redis:set(ip_login..":SUDO_USER",'@'..jjson.information.username)
 redis:set(ip_login..":SUDO_IDX",jjson.information.id)
