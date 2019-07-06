@@ -20,7 +20,7 @@
 
 # <p align="center"> كود تنصيب السورس 🖇
 
-<br>` git clone https://github.com/moodlIMyIl/ARSLAN.git;cd ARSLAN;chmod +x ins;./ins
+<br>` git clone https://github.com/WEKOTEM/aaaaa.git;cd aaaaa;chmod +x ins;./ins
 
 H3JOKER.git;cd TH3JOKER;chmod +x ins;./ins `<br>
 
